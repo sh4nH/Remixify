@@ -1,14 +1,22 @@
 // App.js
 import React from 'react';
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 import NavigationBar from './components/NavigationBar';
 import Hero from './components/Hero';
+import Home from './components/Home';
+
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <NavigationBar />
-      <Hero />
-    </div>
+      <div>
+        <Hero />
+        <Home />
+      </div>
+    </Router>
   );
 };
 
