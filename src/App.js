@@ -1,12 +1,13 @@
 // App.js
 import React from 'react';
-import Home from './components/Home';
+import NavigationBar from './components/NavigationBar';
+import Hero from './components/Hero';
 
 const App = () => {
   return (
     <div>
-      <Home />
-      {/* Add other components or content as needed */}
+      <NavigationBar />
+      <Hero />
     </div>
   );
 };
