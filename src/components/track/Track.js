@@ -6,7 +6,6 @@ const Track = ({ data, addToPlaylist, removeFromPlaylist, origin, saveTrack }) =
   const artistArray = data?.artists?.map((artist) => artist.name) || [];
   const artists = artistArray.join(', ');
 
-  // click handler for adding or removing track from playlist
   const clickHandler = () => {
       if (origin === 'tracklist') {
           addToPlaylist(data);

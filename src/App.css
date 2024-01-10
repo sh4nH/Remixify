@@ -8,8 +8,9 @@
     rgba(0, 212, 255, 1) 100%
   );
 
-  padding: 20% 20%;
+  padding: 10% 10%;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 .my-button {
   background-color: #4CAF50;

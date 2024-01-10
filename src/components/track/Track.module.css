@@ -4,6 +4,8 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.26);
     margin: 10px 5%;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .track button {

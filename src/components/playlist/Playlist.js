@@ -1,15 +1,20 @@
-import styles from './Playlist.module.css';
+import styles from './Playlist.module.css'
 import Track from '../track/Track';
 
-const Playlist = ({ playlist, removeFromPlaylist, setPlaylistName, playlistName, userId, createPlaylist, token }) => {
+
+const Playlist = ({ playlist, removeFromPlaylist, setPlaylistName, playlistName, currentUser, createPlaylist, token }) => {
+
   // click handler
   const clickHandler = async () => {
     try {
-      await createPlaylist(userId, playlistName, token);
+      const userData = await currentUser();  // grab current user via API call defined in App.js
+      const userId = userData.id; 
+      await createPlaylist(userId, playlistName, token); // API call to create playlist, defined in App.js
     } catch (error) {
       console.error("Error creating playlist:", error);
     }
   };
+  
 
   return (
     <div className={styles.playlist}>
@@ -18,22 +23,19 @@ const Playlist = ({ playlist, removeFromPlaylist, setPlaylistName, playlistName,
           onChange={(e) => setPlaylistName(e.target.value)}
           value={playlistName}
           name='playlist'
-          placeholder='Enter a name for your playlist'
-        />
+          placeholder='Enter playlist name' />
       </form>
-      {playlist.map((song, index) => (
-        <Track
+      {playlist.map(
+        (song, index) =>
+          <Track
           key={song.id}
           data={song}
           removeFromPlaylist={removeFromPlaylist}
-          origin='playlist'
-        />
-      ))}
-      <button type="submit" onClick={clickHandler}>
-        Save to Spotify
-      </button>
+          origin='playlist' />
+      )}
+      <button type="submit" onClick={clickHandler}>Save to Spotify</button>
     </div>
-  );
-};
+  )
+}
 
-export default Playlist;
+export default Playlist
