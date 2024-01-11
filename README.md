@@ -13,7 +13,7 @@ As a music lover, I often find myself repeatedly listening to my favorite songs.
 ### Opening page
 ![Alt text](images/login.png)
 
-### You Top 20 songs
+### Your Top 20 songs
 ![Alt text](images/main.png)
 
 ### Add to playlist
