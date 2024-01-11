@@ -1,69 +1,29 @@
-# TopTunes
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TopTunes 
 
-## Available Scripts
 
-In the project directory, you can run:
+TopTunes is a React JS webapp that creates a Spotify playlist using songs that you select from your top 20 most listened songs.
 
-### `npm start`
+Click <a href = "https://top-tunes-self.vercel.app/#">here </a> to try it out.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Motivation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As a music lover, I often find myself repeatedly listening to my favorite songs. While Spotify lets you create playlists, it lacks a feature to highlight your top tracks. TopTunes was created as a solution to curate playlists from your top 20 songs, providing an easy way to enjoy your most-played tunes on repeat.
 
-### `npm test`
+## Screenshots
+### Opening page
+![Alt text](images/login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### You Top 20 songs
+![Alt text](images/main.png)
 
-### `npm run build`
+### Add to playlist
+![Alt text](images/playlists.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Save playlist to Spotify
+![Alt text](images/topsongs.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Outcomes
+### ReactJS
+This project allowed me to learn how to build a responsive and interactive UI using React and about creating components and managing state. 
+### Spotify API
+I learned how to use the Spotify API to make authenticated HTTP requests, to acquire user's top tracks, create playlists, retrieve user data etc. Through implementing <a href="https://developer.spotify.com/documentation/web-api/concepts/authorization">user authorization </a>for Spotify, I learnt about OAuth2.0, and the different flows for authorization. 
