@@ -129,29 +129,6 @@ function App() {
     }
   };
 
-  const saveTrack = async (trackId) => {
-    let curToken = token;
-    try {
-      const response = await fetch(
-        `https://api.spotify.com/v1/me/tracks?ids=${trackId}`,
-        {
-          method: "PUT",
-          headers: {
-            Authorization: `Bearer ${curToken}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ids: [trackId],
-          }),
-        }
-      );
-      if (!response.ok) {
-        throw new Error("Error saving track");
-      }
-    } catch (error) {
-      throw error;
-    }
-  };
 
   return (
     <div className="App">
@@ -170,7 +147,6 @@ function App() {
             <Tracklist
               data={tracklist}
               addToPlaylist={addToPlaylist}
-              saveTrack={saveTrack}
             />
           </div>
           <Playlist

@@ -25,10 +25,9 @@ const TopSongs = ({ token, updateTracklist }) => {
       if (!response.ok) {
         localStorage.removeItem("token");
         window.location.reload();
-        console.log("RESPONSE NOT OKAY")
         throw new Error("Response was not ok");
       }
-      
+
 
       const data = await response.json();
       const tracks = data.items;
