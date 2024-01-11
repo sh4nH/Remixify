@@ -36,7 +36,7 @@ const TopSongs = ({ token, updateTracklist }) => {
         <div className={styles.TopSongs}>
             {!token ? (
                 <button>
-                    <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}>Login to Spotify</a>
+                    <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&response_type=${RESPONSE_TYPE}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}`}>Login to Spotify</a>
                 </button>)
                 :
                 (
