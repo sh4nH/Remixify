@@ -162,7 +162,6 @@ function App() {
           Dive into your top 20 songs, curate a playlist that speaks to your
           soul.
         </h3>
-        <div className="userInfo"></div>
       </div>
       <TopSongs token={token} updateTracklist={updateTracklist} />
       {token ? (
