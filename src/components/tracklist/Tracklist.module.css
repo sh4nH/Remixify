@@ -1,29 +1,30 @@
 .tracklist {
-    flex-grow: 1;
-    flex-basis: 100%;
-    border-radius: 10px;
-    color: white;
-    margin: 0 5%;
-    text-align: left;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+  flex-grow: 1;
+  flex-basis: 100%;
+  border-radius: 10px;
+  color: white;
+  margin: 0 5%;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; 
 
 }
 
 .tracklist h2 {
-    margin: 5% 5%;
+  margin: 5% 5%;
 }
 
 .tracklist h3 {
-    margin: 10% 5%;
+  margin: 10% 5%;
 }
 
 .tracklist button {
-    background-color: #1db954;
-    padding: 13px 16px;
-    height: fit-content;
+  background-color: 	#000080;
+  padding: 13px 16px;
+  height: fit-content;
 }
 
 .tracklist button:hover {
-    background-color: #1ed760;
+  background-color: 	#000080;
 }

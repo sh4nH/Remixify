@@ -1,51 +1,50 @@
 .playlist {
-    flex-grow: 1;
-    color: white;
-    margin: 0 5%;
-    border-radius: 10px;
-    flex-basis: 100%;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-
+  flex-grow: 1;
+  color: white;
+  margin: 0 5%;
+  border-radius: 10px;
+  text-align: left;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 .playlist input {
-    
-    background-color: transparent;
-    border-bottom: 1px solid white;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-top: 10px;
-    color: white;
-    font-size: 20px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
 }
 
 .playlist input:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 .playlist input::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(255, 255, 255, 0.5);
-    font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
 }
 
 .playlistinfo {
-    padding-bottom: 10px;
-    margin: 10px 5%;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.26);
-    text-align: left;
+  padding-bottom: 10px;
+  margin: 10px 5%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+  text-align: left;
 }
-
 
 .playlist button {
-    margin-top: 20px;
-    margin-left: 140px;
-
-    font-family: 'Montserrat', sans-serif;
-
+  background-color: #000080;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
 }
-
-
-
+.playlist button:hover {
+  background-color: #000080 !important;
+  box-shadow: none;
+  border: 3px solid #008080;
+}

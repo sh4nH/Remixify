@@ -1,48 +1,46 @@
 .track {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.26);
-    margin: 10px 5%;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+  margin: 10px 5%;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .track button {
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 13px 16px !important;
-    background-color: #1db954;
-    height: fit-content;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 13px 16px !important;
+  background-color: 	#000080;
+  height: fit-content;
 }
 
 .track button:hover {
-    background-color: #1ed760 !important;
-    box-shadow: none;
-    border: 3px solid #1db954;
+  background-color: 	#000080 !important;
+  box-shadow: none;
+  border: 3px solid 	#008080 ;
 }
 
 .info {
-    padding-bottom: 10px;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .info img {
-    object-fit: contain;
-    display: flex;
-    align-items: center;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
 }
 
-
 .trackinfo {
-    width: 50%;
+  width: 50%;
 }
 
 .btns {
-    min-width: 140px;
+  min-width: 140px;
 }

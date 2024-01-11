@@ -1,15 +1,6 @@
 .TopSongs {
-    margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
 
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .TopSongs a {
@@ -21,7 +12,7 @@ button {
     font-family: 'Montserrat', sans-serif;
 
     margin-top: 1%;
-    background-color: #1db954;
+    background-color: #000080;
     border-radius: 100px;
     padding: 1% 50px;
     color: white;
@@ -31,22 +22,9 @@ button {
 }
 
 button:hover {
-    background-color: #1ed760;
+    background-color: #000080;
     cursor: pointer;
     
     box-shadow: none;
-    border: 3px solid #1db954;
-}
-
-.TopSongs input {
-    padding: 10px 50px;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    
-    box-shadow: 0 4px 2px 2px #00000054;
-}
-
-.TopSongs input:focus-visible {
-    outline: none;
+    border: 3px solid #008080;
 }
