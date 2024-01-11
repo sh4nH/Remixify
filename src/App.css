@@ -26,9 +26,17 @@
 }
 .flexItem::after {
   content: "";
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  right: 0;
-  top: 0;
+}
+
+
+.logos-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo-link {
+  margin: 0 10px;
+  font-size: 24px; /* Adjust the size as needed */
 }
