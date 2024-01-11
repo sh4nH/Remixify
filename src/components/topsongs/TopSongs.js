@@ -28,7 +28,6 @@ const TopSongs = ({ token, updateTracklist }) => {
         throw new Error("Response was not ok");
       }
 
-
       const data = await response.json();
       const tracks = data.items;
 
