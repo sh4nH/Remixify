@@ -10,4 +10,4 @@ export const SCOPE = [
 ];
 
 export const SCOPES_URL_PARAM = SCOPE.join("%20");
-export const RESPONSE_TYPE = "token";
+export const RESPONSE_TYPE = "code";
