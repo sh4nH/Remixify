@@ -1,6 +1,6 @@
 export const CLIENT_ID = "a8f0bd6bcf8b44fa9736810f3b9020f2";
 export const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
-export const REDIRECT_URI = "http://localhost:3000/";
+export const REDIRECT_URI = "https://top-tunes-self.vercel.app/";
 
 export const SCOPE = [
   "playlist-modify-private",
