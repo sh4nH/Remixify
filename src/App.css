@@ -20,3 +20,23 @@
   cursor: pointer;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+.flexItem {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.flexItem::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  right: 0;
+  top: 0;
+}

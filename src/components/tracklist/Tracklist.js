@@ -1,5 +1,5 @@
 import Track from "../track/Track"
-import styles from './Tracklist.css'
+import styles from './Tracklist.module.css'
 
 const Tracklist = ({ data, addToPlaylist}) => {
     

@@ -18,6 +18,8 @@ form {
 }
 
 button {
+    font-family: 'Montserrat', sans-serif;
+
     margin-top: 1%;
     background-color: #1db954;
     border-radius: 100px;

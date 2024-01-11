@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 
 function App() {
-  // define states
+  // states
   const [tracklist, setTracklist] = useState([]);
   const [playlist, setPlaylist] = useState([]);
   const [playlistName, setPlaylistName] = useState('');
@@ -44,6 +44,7 @@ function App() {
     setPlaylist((prev) => prev.filter(n => n.id !== trackId));
   };
 
+  
   const currentUser = async () => {
     try {
       const response = await fetch('https://api.spotify.com/v1/me', {
@@ -72,7 +73,7 @@ function App() {
   // Function to create a playlist (assuming you have the user's ID)
   const createPlaylist = async (userId, playlistName, token) => {
     try {
-      let playlistId; // initialize variable to store playlist id
+      let playlistId; 
   
       // Create the playlist
       const createResponse = await fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
@@ -162,7 +163,9 @@ function App() {
       <TopSongs token={token} updateTracklist={updateTracklist} />
       {token ? (
         <div className='flex'>
+          <div className='flexItem'>
           <Tracklist data={tracklist} addToPlaylist={addToPlaylist} saveTrack={saveTrack} />
+          </div>
           <Playlist
             className='flexItem'
             playlist={playlist}
